@@ -15,6 +15,10 @@ The goal of the code in this repository is to support a lab environment for stud
 - [Gitlab Actions](./actions.yaml)
   - A simple Gitlab Actions implementation which lints the code in the repository.
 
+## Library Usage
+
+Like most python projects, the Circuit Playground uses libraries for many functionalities. These libraries are not necessarily part of the /lib package initially, however preparation for the lab has loaded the .mpy files from the ./libraries directory onto the Circuit Playground used in the labs. If you want to run this code yourself, we recommend downloading the most updated libraries from Adafruit's repositories, such as the [NeoPixel CircuitPython repository](https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel)
+
 ## References
 
 - [Adafruit Circuit Playground](https://learn.adafruit.com/category/circuit-playground)
