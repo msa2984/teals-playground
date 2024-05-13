@@ -23,3 +23,9 @@ Like most python projects, the Circuit Playground uses libraries for many functi
 
 - [Adafruit Circuit Playground](https://learn.adafruit.com/category/circuit-playground)
 - [Adafruit Samples](https://github.com/adafruit/Adafruit_Learning_System_Guides/tree/main)
+- [What is an LED?](https://learn.adafruit.com/all-about-leds/what-is-an-led)
+- [Capacitive Touch](https://learn.adafruit.com/make-it-sense/using-capacitive-touch)
+- [Light Sensor](https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor)
+- [What is a Phototransistor?](https://www.build-electronic-circuits.com/phototransistor/)
+- [Infrared Transmit + Receive](https://learn.adafruit.com/infrared-ir-receive-transmit-circuit-playground-express-circuit-python/overview)
+- [Electromagnetic spectrum](https://en.wikipedia.org/wiki/Electromagnetic_spectrum)
