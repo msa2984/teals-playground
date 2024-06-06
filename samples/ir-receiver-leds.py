@@ -22,11 +22,9 @@ while True:
         received_code = decoder.decode_bits(pulses)
     except adafruit_irremote.IRNECRepeatException:
         # We got an unusual short code, probably a 'repeat' signal
-        # print("NEC repeat!")
         continue
     except adafruit_irremote.IRDecodeException:
         # Something got distorted or maybe its not an NEC-type remote?
-        # print("Failed to decode: ", e.args)
         continue
 
     print("NEC Infrared code received: ", received_code)

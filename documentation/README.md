@@ -6,9 +6,9 @@ This README pertains to the documentation stored in this directory, as well as i
 
 ## Files
   
-- [Embedded Software Lab Powerpoint](/documentation/Embedded_Software_Lab.pptx) |
-  - The original PowerPoint for the lab experiment(s) |.
-- [Embedded Software Lab PDF](/documentation/Embedded_Software_Lab.pdf) |
+- [Embedded Software Lab Powerpoint](/documentation/Embedded_Software_Lab.pptx)
+  - The original PowerPoint for the lab experiment(s).
+- [Embedded Software Lab PDF](/documentation/Embedded_Software_Lab.pdf)
   - The PowerPoint, in PDF form.
 
 ## Sensors Used in the Lab 
@@ -19,7 +19,7 @@ NeoPixels are individually addressable LEDs. They're built by Adafruit, and they
 
 https|//learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels
 
-Using CircuitPython, some common colors can be defined for NeoPixels|
+Using CircuitPython, some common colors can be defined for NeoPixels
 
 | Color | Value |
 | ---- | ---- |
@@ -30,23 +30,21 @@ Using CircuitPython, some common colors can be defined for NeoPixels|
 | BLUE | (0, 0, 255) | |
 | PURPLE | (180, 0, 255) | |
 
-### Touch Sensors (Capacitive Sensors) |
+### Touch Sensors (Capacitive Sensors) 
 
 There are 14 "Alligator Pads" on the Circuit Playground. While some of these allow the developer to tap into voltages on the board such as 3.3V and GND, the non-power pads can be used for capacitive touch capabilities. Essentially, when something is pressed against these capacitive touch pads, the board can measure how much current is generated. Different objects generate different current values. Fruit can generate similar current levels to the human finger!
 
 https|//learn.adafruit.com/circuit-playground-lesson-number-0/alligator-pads-pinout#capacitive-touch
 
 
-### Light Sensor (Phototransistor) |
-
+### Light Sensor (Phototransistor) 
 There is an integrated phototransistor on the Circuit Playground. This sensor measure the *amount* of light it receives, and the developer can use this value to control output from the board. Phototransistors are similar to capacitive touch sensors in that when a certain state is reach, current is generated.
 
 https|//learn.adafruit.com/circuit-playground-lesson-number-0/light-sensor
 
 The values read by the phototransistor range between 0 and 1023, where 0 is no light detected and 1023 is maximum light detected. 
 
-### IR Receiver (IR Remote Control) |
-
+### IR Receiver (IR Remote Control) 
 The Circuit Playground has both an integrated IR transmitter and receiver, however during the lab we used the IR receiver with the [Adafruit mini remote control](https|//www.adafruit.com/product/389) |.
 
 
