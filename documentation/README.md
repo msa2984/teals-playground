@@ -19,7 +19,7 @@ NeoPixels are individually addressable LEDs. They're built by Adafruit, and they
 
 https|//learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels
 
-Using CircuitPython, some common colors can be defined for NeoPixels|
+Using CircuitPython, some common colors can be defined for NeoPixels
 
 | Color | Value |
 | ---- | ---- |
