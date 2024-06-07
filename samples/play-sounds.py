@@ -1,12 +1,14 @@
-# SPDX-FileCopyrightText: 2019 Kattni Rembor for Adafruit Industries
-#
-# SPDX-License-Identifier: MIT
-
-# Circuit Playground 808 Drum machine
 import time
 import board
 import touchio
 import digitalio
+
+button_b = digitalio.DigitalInOut(board.BUTTON_B)
+button_b.switch_to_input(pull=digitalio.Pull.DOWN)
+
+
+button_a = digitalio.DigitalInOut(board.BUTTON_A)
+button_a.switch_to_input(pull=digitalio.Pull.DOWN)
 
 try:
     from audiocore import WaveFile
@@ -28,14 +30,6 @@ speaker_enable = digitalio.DigitalInOut(board.SPEAKER_ENABLE)
 speaker_enable.direction = digitalio.Direction.OUTPUT
 speaker_enable.value = True
 
-# Make the input capacitive touchpads
-capPins = (board.A1, board.A2, board.A3, board.A4, board.A5,
-           board.A6, board.TX)
-
-touchPad = []
-for i in range(7):
-    touchPad.append(touchio.TouchIn(capPins[i]))
-
 # The seven files assigned to the touchpads
 audiofiles = ["bd_tek.wav", "elec_hi_snare.wav", "elec_cymbal.wav",
               "elec_blip2.wav", "bd_zome.wav", "bass_hit_c.wav",
@@ -53,8 +47,9 @@ def play_file(filename):
 
 
 while True:
-    for i in range(7):
-        if board.BUTTON_B:
-            play_file(audiofiles[2])
-        if touchPad[i].value:
-            play_file(audiofiles[i])
+    if button_a.value:
+        print('button A')
+        play_file(audiofiles[0])
+    if button_b.value:
+        print('button B')
+        play_file(audiofiles[1])
