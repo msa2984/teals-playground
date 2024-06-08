@@ -1,6 +1,5 @@
 import time
 import board
-import touchio
 import digitalio
 
 button_b = digitalio.DigitalInOut(board.BUTTON_B)
