@@ -17,7 +17,7 @@ This README pertains to the documentation stored in this directory, as well as i
 
 NeoPixels are individually addressable LEDs. They're built by Adafruit, and they use WS2812, WS2811, and SK6812 drivers. Not all individually addressable LEDs are NeoPixels, but if they use these same drivers, they likely work in similar ways!
 
-https|//learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels
+learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels
 
 Using CircuitPython, some common colors can be defined for NeoPixels
 
@@ -34,7 +34,7 @@ Using CircuitPython, some common colors can be defined for NeoPixels
 
 There are 14 "Alligator Pads" on the Circuit Playground. While some of these allow the developer to tap into voltages on the board such as 3.3V and GND, the non-power pads can be used for capacitive touch capabilities. Essentially, when something is pressed against these capacitive touch pads, the board can measure how much current is generated. Different objects generate different current values. Fruit can generate similar current levels to the human finger!
 
-https|//learn.adafruit.com/circuit-playground-lesson-number-0/alligator-pads-pinout#capacitive-touch
+learn.adafruit.com/circuit-playground-lesson-number-0/alligator-pads-pinout#capacitive-touch
 
 
 ### Light Sensor (Phototransistor) 
@@ -44,8 +44,12 @@ https|//learn.adafruit.com/circuit-playground-lesson-number-0/light-sensor
 
 The values read by the phototransistor range between 0 and 1023, where 0 is no light detected and 1023 is maximum light detected. 
 
+### Speaker
+
+All Circuit Playground devices have a speaker which can output simple WAV files.
+
 ### IR Receiver (IR Remote Control) 
-The Circuit Playground has both an integrated IR transmitter and receiver, however during the lab we used the IR receiver with the [Adafruit mini remote control](https|//www.adafruit.com/product/389) |.
+The Circuit Playground and Circuit Playground Express have both an integrated IR transmitter and receiver, however during the lab we used the IR receiver with the [Adafruit mini remote control](https|//www.adafruit.com/product/389) |.
 
 
 The following values are transmitted from the mini remote control, following [NEC codes](https|//en.wikipedia.org/wiki/National_Electrical_Code)
